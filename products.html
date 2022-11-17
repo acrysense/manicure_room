@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lera - Магазин</title>
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header header--inner" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" width="200px" height="21px" alt="Lera">
+					</a>
+					<nav class="nav header__nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="index.html" class="nav__link">Главная</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Личный кабинет</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Выйти</a>
+							</li>
+							<!--<li class="nav__item @@services">
+                        <a href="services.html" class="nav__link">Услуги и цены</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="products.html" class="nav__link">Магазин</a>
+                    </li>
+                    <li class="nav__item @@contacts">
+                        <a href="contacts.html" class="nav__link">Контакты</a>
+                    </li>-->
+						</ul>
+					</nav>
+					<div class="header__group">
+						<a href="tel:88005005050" class="header__phone">8 800 500-50-50</a>
+						<ul class="c-controls header__controls">
+							<li class="c-controls__item">
+								<a href="#" class="c-controls__elem">
+									<svg class="c-controls__icon">
+										<use xlink:href="img/sprite.svg#icon-like"></use>
+									</svg>
+									<!--<span class="c-controls__value">8</span>-->
+								</a>
+							</li>
+							<li class="c-controls__item">
+								<a href="#" class="c-controls__elem">
+									<svg class="c-controls__icon">
+										<use xlink:href="img/sprite.svg#icon-basket"></use>
+									</svg>
+									<!--<span class="c-controls__value">2</span>-->
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="header__btn btn">Записаться</a>
+						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- mobile menu -->
+		<div class="mobile-menu" id="mobile-menu">
+			<button class="mobile-menu__close" id="mobile-menu-close" aria-label="Закрыть">
+				<svg class="mobile-menu__close-icon">
+					<use xlink:href="img/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+			<div class="mobile-menu__wrapper">
+				<nav class="nav mobile-menu__nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="index.html" class="nav__link">Главная</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Личный кабинет</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Редактировать</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Доход</a>
+						</li>
+						<li class="nav__item">
+							<div class="nav__dropdown">
+								<a href="#" class="nav__link">Статистика</a>
+								<ul class="nav__submenu">
+									<li class="nav__subitem">
+										<a href="#" class="nav__sublink">Текстовый вид</a>
+									</li>
+									<li class="nav__subitem">
+										<a href="#" class="nav__sublink">Графический вид</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav__item">
+							<div class="nav__dropdown">
+								<a href="#" class="nav__link">Календари</a>
+								<ul class="nav__submenu">
+									<li class="nav__subitem">
+										<a href="#" class="nav__sublink">Мой</a>
+									</li>
+									<li class="nav__subitem">
+										<a href="#" class="nav__sublink">Ekaterina</a>
+									</li>
+									<li class="nav__subitem">
+										<a href="#" class="nav__sublink">Irina</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Контакты</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Магазин</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Выйти</a>
+						</li>
+						<!--<li class="nav__item @@services">
+                    <a href="services.html" class="nav__link">Услуги и цены</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a href="products.html" class="nav__link">Магазин</a>
+                </li>
+                <li class="nav__item @@contacts">
+                    <a href="contacts.html" class="nav__link">Контакты</a>
+                </li>-->
+					</ul>
+				</nav>
+				<div class="mobile-menu__group">
+					<a href="tel:88005005050" class="mobile-menu__phone">8 800 500-50-50</a>
+					<a href="#" class="mobile-menu__btn btn">Записаться</a>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+		<!-- end of mobile mneu -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- catalog -->
+			<section class="catalog" id="catalog">
+				<div class="container">
+					<div class="catalog__wrap">
+						<div class="catalog__left">
+							<h1 class="catalog__title">Магазин</h1>
+							<div class="catalog__block">
+								<div class="catalog-categories">
+									<ul class="catalog-categories__list">
+										<li class="catalog-categories__item catalog-categories__item--active">
+											<button class="catalog-categories__btn">
+												<span class="catalog-categories__name">Все товары</span>
+												<span class="catalog-categories__value">236</span>
+											</button>
+										</li>
+										<li class="catalog-categories__item">
+											<button class="catalog-categories__btn">
+												<span class="catalog-categories__name">Базы</span>
+												<span class="catalog-categories__value">24</span>
+											</button>
+										</li>
+										<li class="catalog-categories__item">
+											<button class="catalog-categories__btn">
+												<span class="catalog-categories__name">Топы</span>
+												<span class="catalog-categories__value">17</span>
+											</button>
+										</li>
+										<li class="catalog-categories__item">
+											<button class="catalog-categories__btn">
+												<span class="catalog-categories__name">Гель лаки</span>
+												<span class="catalog-categories__value">51</span>
+											</button>
+										</li>
+										<li class="catalog-categories__item">
+											<button class="catalog-categories__btn">
+												<span class="catalog-categories__name">Наращивание</span>
+												<span class="catalog-categories__value">25</span>
+											</button>
+										</li>
+										<li class="catalog-categories__item">
+											<button class="catalog-categories__btn">
+												<span class="catalog-categories__name">Фрезы</span>
+												<span class="catalog-categories__value">12</span>
+											</button>
+										</li>
+										<li class="catalog-categories__item">
+											<button class="catalog-categories__btn">
+												<span class="catalog-categories__name">Инструменты</span>
+												<span class="catalog-categories__value">33</span>
+											</button>
+										</li>
+										<li class="catalog-categories__item">
+											<button class="catalog-categories__btn">
+												<span class="catalog-categories__name">Кисти и щетки</span>
+												<span class="catalog-categories__value">9</span>
+											</button>
+										</li>
+										<li class="catalog-categories__item">
+											<button class="catalog-categories__btn">
+												<span class="catalog-categories__name">Жидкости</span>
+												<span class="catalog-categories__value">15</span>
+											</button>
+										</li>
+										<li class="catalog-categories__item">
+											<button class="catalog-categories__btn">
+												<span class="catalog-categories__name">Пилки и бафы</span>
+												<span class="catalog-categories__value">24</span>
+											</button>
+										</li>
+										<li class="catalog-categories__item">
+											<button class="catalog-categories__btn">
+												<span class="catalog-categories__name">Ухаживающие средства</span>
+												<span class="catalog-categories__value">58</span>
+											</button>
+										</li>
+										<li class="catalog-categories__item">
+											<button class="catalog-categories__btn">
+												<span class="catalog-categories__name">Файлы, диски и основы</span>
+												<span class="catalog-categories__value">19</span>
+											</button>
+										</li>
+									</ul>
+									<div class="select-box catalog-categories__select">
+										<div class="select-box__container">
+											<div class="select-box__wrap">
+												<div class="select-box__scroll">
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="categories-select-01" name="categories-select">
+														<label for="categories-select-01" class="select-box__label">
+															<span class="select-box__value">24</span>
+															<span class="select-box__title">Базы</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="categories-select-02" name="categories-select">
+														<label for="categories-select-02" class="select-box__label">
+															<span class="select-box__value">17</span>
+															<span class="select-box__title">Топы</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="categories-select-03" name="categories-select">
+														<label for="categories-select-03" class="select-box__label">
+															<span class="select-box__value">51</span>
+															<span class="select-box__title">Гель лаки</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="categories-select-04" name="categories-select">
+														<label for="categories-select-04" class="select-box__label">
+															<span class="select-box__value">25</span>
+															<span class="select-box__title">Наращивание</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="categories-select-05" name="categories-select">
+														<label for="categories-select-05" class="select-box__label">
+															<span class="select-box__value">12</span>
+															<span class="select-box__title">Фрезы</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="categories-select-06" name="categories-select">
+														<label for="categories-select-06" class="select-box__label">
+															<span class="select-box__value">33</span>
+															<span class="select-box__title">Инструменты</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="categories-select-07" name="categories-select">
+														<label for="categories-select-07" class="select-box__label">
+															<span class="select-box__value">9</span>
+															<span class="select-box__title">Кисти и щетки</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="categories-select-08" name="categories-select">
+														<label for="categories-select-08" class="select-box__label">
+															<span class="select-box__value">15</span>
+															<span class="select-box__title">Жидкости</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="categories-select-09" name="categories-select">
+														<label for="categories-select-09" class="select-box__label">
+															<span class="select-box__value">24</span>
+															<span class="select-box__title">Пилки и бафы</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="categories-select-10" name="categories-select">
+														<label for="categories-select-10" class="select-box__label">
+															<span class="select-box__value">58</span>
+															<span class="select-box__title">Ухаживающие средства</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="categories-select-11" name="categories-select">
+														<label for="categories-select-11" class="select-box__label">
+															<span class="select-box__value">19</span>
+															<span class="select-box__title">Файлы, диски и основы</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<span class="select-box__selected">
+											<span class="select-box__value">236</span>
+											<span class="select-box__title">Все товары</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__block">
+								<h3 class="catalog__subtitle">Фильтр</h3>
+								<form action="#" class="catalog-filter">
+									<div class="catalog-filter__range">
+										<div id="range-money"></div>
+									</div>
+									<div class="catalog-filter__inner">
+										<div class="input-value catalog-filter__input">
+											<input type="number" id="range-money-min" class="input-value__input" placeholder="100">
+										</div>
+										<div class="input-value catalog-filter__input">
+											<input type="number" id="range-money-max" class="input-value__input" placeholder="8500">
+										</div>
+									</div>
+									<div class="catalog-filter__select">
+										<select class="js-select">
+											<option value="0">Товары в наличии</option>
+											<option value="1">Товары в наличии</option>
+											<option value="2">Товары в наличии</option>
+											<option value="3">Товары в наличии</option>
+										</select>
+									</div>
+									<button class="catalog-filter__btn btn btn--lg">Применить</button>
+								</form>
+							</div>
+						</div>
+						<div class="catalog__right">
+							<div class="catalog__topping">
+								<div class="default-select catalog__select">
+									<select class="js-select">
+										<option value="0">По умолчанию</option>
+										<option value="1">По возрастанию</option>
+										<option value="2">По убыванию</option>
+									</select>
+								</div>
+							</div>
+							<div class="catalog__wrapper">
+								<div class="catalog__item">
+									<div class="catalog__top">
+										<button class="c-like catalog__like">
+											<svg class="c-like__icon">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+										</button>
+									</div>
+									<a href="product.html" class="catalog__img">
+										<img src="img/products-01.png" alt="Image">
+									</a>
+									<a href="product.html" class="catalog__name">MILV Гель для удаления ороговевшей кожи, 15 мл</a>
+									<div class="catalog__inner">
+										<div class="catalog__prices">
+											<span class="catalog__price catalog__price--new">166₽</span>
+										</div>
+										<div class="c-quantity catalog__quantity">
+											<button class="c-quantity__btn c-quantity__btn--minus">
+												<svg class="c-quantity__icon">
+													<use xlink:href="img/sprite.svg#icon-minus"></use>
+												</svg>
+											</button>
+											<input type="number" class="c-quantity__value" value="0">
+											<button class="c-quantity__btn c-quantity__btn--plus">
+												<svg class="c-quantity__icon">
+													<use xlink:href="img/sprite.svg#icon-plus"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<a href="#" class="catalog__btn btn">В корзину</a>
+								</div>
+								<div class="catalog__item">
+									<div class="catalog__top">
+										<button class="c-like catalog__like">
+											<svg class="c-like__icon">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+										</button>
+									</div>
+									<a href="product.html" class="catalog__img">
+										<img src="img/products-02.png" alt="Image">
+									</a>
+									<a href="product.html" class="catalog__name">MILV Гель для удаления ороговевшей кожи, 15 мл</a>
+									<div class="catalog__inner">
+										<div class="catalog__prices">
+											<span class="catalog__price catalog__price--new">166₽</span>
+										</div>
+										<div class="c-quantity catalog__quantity">
+											<button class="c-quantity__btn c-quantity__btn--minus">
+												<svg class="c-quantity__icon">
+													<use xlink:href="img/sprite.svg#icon-minus"></use>
+												</svg>
+											</button>
+											<input type="number" class="c-quantity__value" value="0">
+											<button class="c-quantity__btn c-quantity__btn--plus">
+												<svg class="c-quantity__icon">
+													<use xlink:href="img/sprite.svg#icon-plus"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<a href="#" class="catalog__btn btn">В корзину</a>
+								</div>
+								<div class="catalog__item">
+									<div class="catalog__top">
+										<span class="catalog__discount">-52%</span>
+										<button class="c-like catalog__like">
+											<svg class="c-like__icon">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+										</button>
+									</div>
+									<a href="product.html" class="catalog__img">
+										<img src="img/products-03.png" alt="Image">
+									</a>
+									<a href="product.html" class="catalog__name">MILV Гель для удаления ороговевшей кожи, 15 мл</a>
+									<div class="catalog__inner">
+										<div class="catalog__prices">
+											<span class="catalog__price catalog__price--new">166₽</span>
+										</div>
+										<div class="c-quantity catalog__quantity">
+											<button class="c-quantity__btn c-quantity__btn--minus">
+												<svg class="c-quantity__icon">
+													<use xlink:href="img/sprite.svg#icon-minus"></use>
+												</svg>
+											</button>
+											<input type="number" class="c-quantity__value" value="0">
+											<button class="c-quantity__btn c-quantity__btn--plus">
+												<svg class="c-quantity__icon">
+													<use xlink:href="img/sprite.svg#icon-plus"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<a href="#" class="catalog__btn btn">В корзину</a>
+								</div>
+								<div class="catalog__item">
+									<div class="catalog__top">
+										<span class="catalog__discount">-52%</span>
+										<button class="c-like catalog__like">
+											<svg class="c-like__icon">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+										</button>
+									</div>
+									<a href="product.html" class="catalog__img">
+										<img src="img/products-03.png" alt="Image">
+									</a>
+									<a href="product.html" class="catalog__name">MILV Гель для удаления ороговевшей кожи, 15 мл</a>
+									<div class="catalog__inner">
+										<div class="catalog__prices">
+											<span class="catalog__price catalog__price--new">166₽</span>
+										</div>
+										<div class="c-quantity catalog__quantity">
+											<button class="c-quantity__btn c-quantity__btn--minus">
+												<svg class="c-quantity__icon">
+													<use xlink:href="img/sprite.svg#icon-minus"></use>
+												</svg>
+											</button>
+											<input type="number" class="c-quantity__value" value="0">
+											<button class="c-quantity__btn c-quantity__btn--plus">
+												<svg class="c-quantity__icon">
+													<use xlink:href="img/sprite.svg#icon-plus"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<a href="#" class="catalog__btn btn">В корзину</a>
+								</div>
+								<div class="catalog__item">
+									<div class="catalog__top">
+										<button class="c-like catalog__like">
+											<svg class="c-like__icon">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+										</button>
+									</div>
+									<a href="product.html" class="catalog__img">
+										<img src="img/products-01.png" alt="Image">
+									</a>
+									<a href="product.html" class="catalog__name">MILV Гель для удаления ороговевшей кожи, 15 мл</a>
+									<div class="catalog__inner">
+										<div class="catalog__prices">
+											<span class="catalog__price catalog__price--new">166₽</span>
+										</div>
+										<div class="c-quantity catalog__quantity">
+											<button class="c-quantity__btn c-quantity__btn--minus">
+												<svg class="c-quantity__icon">
+													<use xlink:href="img/sprite.svg#icon-minus"></use>
+												</svg>
+											</button>
+											<input type="number" class="c-quantity__value" value="0">
+											<button class="c-quantity__btn c-quantity__btn--plus">
+												<svg class="c-quantity__icon">
+													<use xlink:href="img/sprite.svg#icon-plus"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<a href="#" class="catalog__btn btn">В корзину</a>
+								</div>
+								<div class="catalog__item">
+									<div class="catalog__top">
+										<button class="c-like catalog__like">
+											<svg class="c-like__icon">
+												<use xlink:href="img/sprite.svg#icon-like"></use>
+											</svg>
+										</button>
+									</div>
+									<a href="product.html" class="catalog__img">
+										<img src="img/products-02.png" alt="Image">
+									</a>
+									<a href="product.html" class="catalog__name">MILV Гель для удаления ороговевшей кожи, 15 мл</a>
+									<div class="catalog__inner">
+										<div class="catalog__prices">
+											<span class="catalog__price catalog__price--new">166₽</span>
+										</div>
+										<div class="c-quantity catalog__quantity">
+											<button class="c-quantity__btn c-quantity__btn--minus">
+												<svg class="c-quantity__icon">
+													<use xlink:href="img/sprite.svg#icon-minus"></use>
+												</svg>
+											</button>
+											<input type="number" class="c-quantity__value" value="0">
+											<button class="c-quantity__btn c-quantity__btn--plus">
+												<svg class="c-quantity__icon">
+													<use xlink:href="img/sprite.svg#icon-plus"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<a href="#" class="catalog__btn btn">В корзину</a>
+								</div>
+							</div>
+							<div class="catalog__bottom">
+								<ul class="c-pagination catalog__pagination">
+									<li class="c-pagination__item c-pagination__item--active">
+										<a href="#" class="c-pagination__elem">1</a>
+									</li>
+									<li class="c-pagination__item">
+										<a href="#" class="c-pagination__elem">2</a>
+									</li>
+									<li class="c-pagination__item">
+										<a href="#" class="c-pagination__elem">3</a>
+									</li>
+									<li class="c-pagination__item">
+										<a href="#" class="c-pagination__elem">
+											<span>Вперёд</span>
+											<svg class="c-pagination__icon">
+												<use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+								<div class="default-select catalog__select-view">
+									<select class="js-select">
+										<option value="0">Показывать по 9</option>
+										<option value="1">Показывать по 12</option>
+										<option value="2">Показывать по 15</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of catalog -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__wrapper footer__wrapper--top">
+					<picture class="footer__logotype">
+						<img src="img/logotype-white.svg" width="73px" height="30px" alt="Lera">
+					</picture>
+					<ul class="c-socials">
+						<li class="c-socials__item">
+							<a href="#" class="c-socials__link">VK</a>
+						</li>
+						<li class="c-socials__item">
+							<a href="#" class="c-socials__link">Telegram</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__wrapper footer__wrapper--main">
+					<div class="footer__block">
+						<span class="footer__help">Телефон</span>
+						<a href="tel:88005005050" class="footer__number">8 800 500-50-50</a>
+					</div>
+					<div class="footer__block">
+						<span class="footer__help">Адрес</span>
+						<address class="footer__address">Россия, Тамбов <br>ул. Студенецкая, д. 20, этаж 5</address>
+					</div>
+				</div>
+				<div class="footer__wrapper footer__wrapper--bottom">
+					<p class="footer__copyright">© "Lera", 2018 — 2022</p>
+					<p class="footer__copyright">Все права защищены</p>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
