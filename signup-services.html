@@ -160,83 +160,121 @@
 				<div class="container">
 					<div class="auth__wrapper">
 						<h2 class="auth__title">Выберите услугу<h2>
-								<div class="auth-masters">
-									<div class="auth-masters__wrapper">
-										<picture class="auth-masters__img">
-											<img src="img/masters-01.jpeg" alt="Image">
-											<span class="auth-masters__status auth-masters__status--mobile">Топ мастер</span>
-										</picture>
-										<div class="auth-masters__body">
-											<h3 class="auth-masters__title">Валерия</h3>
-											<span class="auth-masters__status auth-masters__status--desktop">Топ мастер</span>
+								<div class="testimonials">
+									<div class="testimonial-block">
+										<div class="author-details">
+											<h4>Екатерина</h4>
+											<p> Мастер ногтевого сервиса</p>
 										</div>
 									</div>
-									<div class="auth-masters__main">
-										<div class="select-services auth-masters__services">
-											<div class="select-services__wrap">
-												<h3 class="select-services__title">Услуги</h3>
-												<div class="select-services__wrapper">
-													<label for="select-services-01" class="square-checkbox select-services__item">
-														<input type="checkbox" id="select-services-01" class="square-checkbox__input">
-														<div class="square-checkbox__inner">
-															<div class="square-checkbox__group">
-																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__elem">Гигиенический маникюр</span>
-															</div>
-															<span class="square-checkbox__elem">800 ₽</span>
-														</div>
-													</label>
-													<label for="select-services-02" class="square-checkbox select-services__item">
-														<input type="checkbox" id="select-services-02" class="square-checkbox__input">
-														<div class="square-checkbox__inner">
-															<div class="square-checkbox__group">
-																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__elem">Маникюр + однотонное покрытие</span>
-															</div>
-															<span class="square-checkbox__elem">1 500 ₽</span>
-														</div>
-													</label>
-													<label for="select-services-03" class="square-checkbox select-services__item">
-														<input type="checkbox" id="select-services-03" class="square-checkbox__input">
-														<div class="square-checkbox__inner">
-															<div class="square-checkbox__group">
-																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__elem">Маникюр + несложный дизайн</span>
-															</div>
-															<span class="square-checkbox__elem">1 600 ₽</span>
-														</div>
-													</label>
-													<label for="select-services-04" class="square-checkbox select-services__item">
-														<input type="checkbox" id="select-services-04" class="square-checkbox__input">
-														<div class="square-checkbox__inner">
-															<div class="square-checkbox__group">
-																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__elem">Маникюр + френч/втирка/дизайн от 4 ногтей</span>
-															</div>
-															<span class="square-checkbox__elem">1 700 ₽</span>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="select-services__wrap">
-												<h3 class="select-services__title">Другие услуги</h3>
-												<div class="select-services__wrapper">
-													<label for="select-services-05" class="square-checkbox select-services__item">
-														<input type="checkbox" id="select-services-05" class="square-checkbox__input">
-														<div class="square-checkbox__inner">
-															<div class="square-checkbox__group">
-																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__elem">Гигиенический маникюр</span>
-															</div>
-															<span class="square-checkbox__elem">800 ₽</span>
-														</div>
-													</label>
-												</div>
-											</div>
+									<form action="/signup/calendar" class="w-100" method="POST">
+										<input type="hidden" name="csrf_token" value="ImQyZTcyZWJlZDQzMTIxNGEyY2IzMjJjZDFiZDA4MTM5MTA3NWM1MDYi.Y3uzSw.2VuPXnVUl1u8kMo3ttTqxl7i9aA" />
+										<input type="hidden" name="user_timezone" value="" />
+										<div class="multiple-select">
+											<select multiple="multiple" name="Services" id="services" class="js-multiple-select">
+												<optgroup label="другие">
+													<option>Укрепление акриловой пудрой --- 100</option>
+													<option>Ремонт (от 4 ногтей) --- 50</option>
+													<option>Донаращивание/поднятие клюющего ногтя --- 100</option>
+													<option>Укрепление гелем/полигелем --- 200</option>
+													<option>Полировка ногтей японской системой --- 300</option>
+												</optgroup>
+												<optgroup label="педикюр">
+													<option>Педикюр пальчиковой зоны + покрытие гель-лак --- 1400</option>
+													<option>Полный педикюр + покрытие гель-лак --- 1600</option>
+													<option>Препаратный педикюр «clearance» + покрытие --- 1800</option>
+													<option>Препаратный педикюр «clearance» без покрытия --- 1500</option>
+													<option>Гигиенический педикюр --- 1200</option>
+												</optgroup>
+												<optgroup label="маникюр">
+													<option>Маникюр + однотонное покрытие --- 1400</option>
+													<option>Гигиенический маникюр --- 800</option>
+													<option>Маникюр + несложный дизайн --- 1500</option>
+													<option>Маникюр + френч/втирка/любой дизайн от 4 ногтей --- 1600</option>
+												</optgroup>
+											</select>
 										</div>
-										<a href="signup-date.html" class="auth-masters__btn btn">Далее</a>
-									</div>
+										<br>
+										<button class="btn btn-main" type="submit" name="btn_forward" value="forward">Далее</button>
+									</form>
 								</div>
+								<!--<div class="auth-masters">
+                            <div class="auth-masters__wrapper">
+                                <picture class="auth-masters__img">
+                                    <img src="img/masters-01.jpeg" alt="Image">
+                                    <span class="auth-masters__status auth-masters__status--mobile">Топ мастер</span>
+                                </picture>
+                                <div class="auth-masters__body">
+                                    <h3 class="auth-masters__title">Валерия</h3>
+                                    <span class="auth-masters__status auth-masters__status--desktop">Топ мастер</span>
+                                </div>
+                            </div>
+                            <div class="auth-masters__main">
+                                <div class="select-services auth-masters__services">
+                                    <div class="select-services__wrap">
+                                        <h3 class="select-services__title">Услуги</h3>
+                                        <div class="select-services__wrapper">
+                                            <label for="select-services-01" class="square-checkbox select-services__item">
+                                                <input type="checkbox" id="select-services-01" class="square-checkbox__input">
+                                                <div class="square-checkbox__inner">
+                                                    <div class="square-checkbox__group">
+                                                        <span class="square-checkbox__icon"></span>
+                                                        <span class="square-checkbox__elem">Гигиенический маникюр</span>
+                                                    </div>
+                                                    <span class="square-checkbox__elem">800 ₽</span>
+                                                </div>
+                                            </label>
+                                            <label for="select-services-02" class="square-checkbox select-services__item">
+                                                <input type="checkbox" id="select-services-02" class="square-checkbox__input">
+                                                <div class="square-checkbox__inner">
+                                                    <div class="square-checkbox__group">
+                                                        <span class="square-checkbox__icon"></span>
+                                                        <span class="square-checkbox__elem">Маникюр + однотонное покрытие</span>
+                                                    </div>
+                                                    <span class="square-checkbox__elem">1 500 ₽</span>
+                                                </div>
+                                            </label>
+                                            <label for="select-services-03" class="square-checkbox select-services__item">
+                                                <input type="checkbox" id="select-services-03" class="square-checkbox__input">
+                                                <div class="square-checkbox__inner">
+                                                    <div class="square-checkbox__group">
+                                                        <span class="square-checkbox__icon"></span>
+                                                        <span class="square-checkbox__elem">Маникюр + несложный дизайн</span>
+                                                    </div>
+                                                    <span class="square-checkbox__elem">1 600 ₽</span>
+                                                </div>
+                                            </label>
+                                            <label for="select-services-04" class="square-checkbox select-services__item">
+                                                <input type="checkbox" id="select-services-04" class="square-checkbox__input">
+                                                <div class="square-checkbox__inner">
+                                                    <div class="square-checkbox__group">
+                                                        <span class="square-checkbox__icon"></span>
+                                                        <span class="square-checkbox__elem">Маникюр + френч/втирка/дизайн от 4 ногтей</span>
+                                                    </div>
+                                                    <span class="square-checkbox__elem">1 700 ₽</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="select-services__wrap">
+                                        <h3 class="select-services__title">Другие услуги</h3>
+                                        <div class="select-services__wrapper">
+                                            <label for="select-services-05" class="square-checkbox select-services__item">
+                                                <input type="checkbox" id="select-services-05" class="square-checkbox__input">
+                                                <div class="square-checkbox__inner">
+                                                    <div class="square-checkbox__group">
+                                                        <span class="square-checkbox__icon"></span>
+                                                        <span class="square-checkbox__elem">Гигиенический маникюр</span>
+                                                    </div>
+                                                    <span class="square-checkbox__elem">800 ₽</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="signup-date.html" class="auth-masters__btn btn">Далее</a>
+                            </div>
+                        </div>-->
 					</div>
 				</div>
 			</div>
