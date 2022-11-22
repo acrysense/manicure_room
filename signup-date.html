@@ -160,9 +160,15 @@
 				<div class="container">
 					<div class="auth__wrapper">
 						<h2 class="auth__title">Выбор даты</h2>
-						<form action="#" class="auth-form auth__form">
-							<input type="text" class="input auth-form__input" id="auth-date" placeholder="Дата" required>
-							<a href="signup-details.html" class="auth-form__btn btn">Далее</a>
+						<!--<form action="#" class="auth-form auth__form">
+                            <input type="text" class="input auth-form__input" id="auth-date" placeholder="Дата" required>
+                            <a href="signup-details.html" class="auth-form__btn btn">Далее</a>
+                        </form>-->
+						<form action="/result_order" class="auth-form auth__form" method="POST">
+							<input type="hidden" name="csrf_token" value="ImEyZDVjMWE4ZDBmZWQxZDM3OWJkZGEwOTZjM2Y0ZGQ0YWE4Mzc4NmMi.Y3y1gw.en6-JS4NbxZaoAJI2AUGZc2bJ58" />
+							<input type="hidden" name="user_timezone" value="" />
+							<input id="datetimepicker" name="datetimepicker" type="text"><br><br>
+							<button class="auth-form__btn btn" type="submit" name="btn_forward" id="calendar-submit">Далее</button>
 						</form>
 					</div>
 				</div>
@@ -208,6 +214,26 @@
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js" integrity="sha512-AIOTidJAcHBH2G/oZv9viEGXRqDNmfdPVPYOYKGy3fti0xIplnlgMHUGfuNRzC6FkzIo0iIxgFnr9RikFxK+sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" integrity="sha512-f0tzWhCwVFS3WeYaofoLWkTP62ObhewQ1EZn65oSYDZUg1+CyywGKkWzm8BxaJj5HGKI72PnMH9jYyIFz+GH7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script>
+		$('#datetimepicker').datetimepicker({
+			inline: true,
+			timepicker: false,
+			minDate: 0,
+			maxDate: '+1970/02/31',
+			dayOfWeekStart: 1,
+			//allowDates: ['2022/11/11'],
+			formatDate: 'Y/m/d',
+			onSelectDate: function(dt, $input) {
+				$('#datetimepicker').datetimepicker('setOptions', {
+					timepicker: true,
+					allowTimes: ['00:00', '04:00', '12:00', '15:00']
+				});
+			}
+		});
+	</script>
 </body>
 
 </html>
