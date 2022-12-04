@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lera - Добавить отзыв</title>
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header @@header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" width="200px" height="21px" alt="Lera">
+					</a>
+					<nav class="nav header__nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="index.html" class="nav__link">Главная</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Личный кабинет</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Выйти</a>
+							</li>
+							<!--<li class="nav__item @@services">
+                        <a href="services.html" class="nav__link">Услуги и цены</a>
+                    </li>
+                    <li class="nav__item @@shop">
+                        <a href="products.html" class="nav__link">Магазин</a>
+                    </li>
+                    <li class="nav__item @@contacts">
+                        <a href="contacts.html" class="nav__link">Контакты</a>
+                    </li>-->
+						</ul>
+					</nav>
+					<div class="header__group">
+						<a href="tel:88005005050" class="header__phone">8 800 500-50-50</a>
+						<ul class="c-controls header__controls">
+							<li class="c-controls__item">
+								<a href="#" class="c-controls__elem">
+									<svg class="c-controls__icon">
+										<use xlink:href="img/sprite.svg#icon-like"></use>
+									</svg>
+									<!--<span class="c-controls__value">8</span>-->
+								</a>
+							</li>
+							<li class="c-controls__item">
+								<a href="#" class="c-controls__elem">
+									<svg class="c-controls__icon">
+										<use xlink:href="img/sprite.svg#icon-basket"></use>
+									</svg>
+									<!--<span class="c-controls__value">2</span>-->
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="header__btn btn">Записаться</a>
+						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- mobile menu -->
+		<div class="mobile-menu" id="mobile-menu">
+			<button class="mobile-menu__close" id="mobile-menu-close" aria-label="Закрыть">
+				<svg class="mobile-menu__close-icon">
+					<use xlink:href="img/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+			<div class="mobile-menu__wrapper">
+				<nav class="nav mobile-menu__nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="index.html" class="nav__link">Главная</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Личный кабинет</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Редактировать</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Доход</a>
+						</li>
+						<li class="nav__item">
+							<div class="nav__dropdown">
+								<a href="#" class="nav__link">Статистика</a>
+								<ul class="nav__submenu">
+									<li class="nav__subitem">
+										<a href="#" class="nav__sublink">Текстовый вид</a>
+									</li>
+									<li class="nav__subitem">
+										<a href="#" class="nav__sublink">Графический вид</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav__item">
+							<div class="nav__dropdown">
+								<a href="#" class="nav__link">Календари</a>
+								<ul class="nav__submenu">
+									<li class="nav__subitem">
+										<a href="#" class="nav__sublink">Мой</a>
+									</li>
+									<li class="nav__subitem">
+										<a href="#" class="nav__sublink">Ekaterina</a>
+									</li>
+									<li class="nav__subitem">
+										<a href="#" class="nav__sublink">Irina</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Контакты</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Магазин</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Выйти</a>
+						</li>
+						<!--<li class="nav__item @@services">
+                    <a href="services.html" class="nav__link">Услуги и цены</a>
+                </li>
+                <li class="nav__item @@shop">
+                    <a href="products.html" class="nav__link">Магазин</a>
+                </li>
+                <li class="nav__item @@contacts">
+                    <a href="contacts.html" class="nav__link">Контакты</a>
+                </li>-->
+					</ul>
+				</nav>
+				<div class="mobile-menu__group">
+					<a href="tel:88005005050" class="mobile-menu__phone">8 800 500-50-50</a>
+					<a href="#" class="mobile-menu__btn btn">Записаться</a>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+		<!-- end of mobile mneu -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- add reviews -->
+			<div class="add-reviews" id="add-reviews">
+				<div class="container">
+					<div class="add-reviews__top">
+						<h2 class="add-reviews__heading">Оставить отзыв</h2>
+					</div>
+					<div class="add-reviews__info">
+						<picture class="add-reviews__img">
+							<img src="img/masters-01.jpeg" alt="Image">
+							<span class="add-reviews__status">Топ мастер</span>
+						</picture>
+						<div class="add-reviews__group">
+							<h3 class="add-reviews__title">Валерия</h3>
+						</div>
+					</div>
+					<form action="#" class="add-reviews-form add-reviews__form">
+						<textarea class="textarea add-reviews-form__input" placeholder="Ваш отзыв" required></textarea>
+						<div class="c-rating add-reviews-form__rating">
+							<svg class="c-rating__star c-rating__star--active">
+								<use xlink:href="img/sprite.svg#icon-star"></use>
+							</svg>
+							<svg class="c-rating__star c-rating__star--active">
+								<use xlink:href="img/sprite.svg#icon-star"></use>
+							</svg>
+							<svg class="c-rating__star c-rating__star--active">
+								<use xlink:href="img/sprite.svg#icon-star"></use>
+							</svg>
+							<svg class="c-rating__star c-rating__star--active">
+								<use xlink:href="img/sprite.svg#icon-star"></use>
+							</svg>
+							<svg class="c-rating__star c-rating__star--active">
+								<use xlink:href="img/sprite.svg#icon-star"></use>
+							</svg>
+						</div>
+						<a href="signup-services.html" class="add-reviews-form__btn btn">Отправить</a>
+					</form>
+				</div>
+			</div>
+			<!-- end of add reviews -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__wrapper footer__wrapper--top">
+					<picture class="footer__logotype">
+						<img src="img/logotype-white.svg" width="73px" height="30px" alt="Lera">
+					</picture>
+					<ul class="c-socials">
+						<li class="c-socials__item">
+							<a href="#" class="c-socials__link">VK</a>
+						</li>
+						<li class="c-socials__item">
+							<a href="#" class="c-socials__link">Telegram</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__wrapper footer__wrapper--main">
+					<div class="footer__block">
+						<span class="footer__help">Телефон</span>
+						<a href="tel:88005005050" class="footer__number">8 800 500-50-50</a>
+					</div>
+					<div class="footer__block">
+						<span class="footer__help">Адрес</span>
+						<address class="footer__address">Россия, Тамбов <br>ул. Студенецкая, д. 20, этаж 5</address>
+					</div>
+				</div>
+				<div class="footer__wrapper footer__wrapper--bottom">
+					<p class="footer__copyright">© "Lera", 2018 — 2022</p>
+					<p class="footer__copyright">Все права защищены</p>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
