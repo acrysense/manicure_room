@@ -167,51 +167,43 @@
 							<span class="add-reviews__status">Топ мастер</span>
 						</picture>
 						<div class="add-reviews__group">
-							<div class="add-reviews__inner">
-								<h3 class="add-reviews__title">Валерия</h3>
-								<div class="c-rating add-reviews__rating">
-									<svg class="c-rating__star c-rating__star--active">
-										<use xlink:href="img/sprite.svg#icon-star"></use>
-									</svg>
-									<svg class="c-rating__star c-rating__star--active">
-										<use xlink:href="img/sprite.svg#icon-star"></use>
-									</svg>
-									<svg class="c-rating__star c-rating__star--active">
-										<use xlink:href="img/sprite.svg#icon-star"></use>
-									</svg>
-									<svg class="c-rating__star c-rating__star--active">
-										<use xlink:href="img/sprite.svg#icon-star"></use>
-									</svg>
-									<svg class="c-rating__star c-rating__star--active">
-										<use xlink:href="img/sprite.svg#icon-star"></use>
-									</svg>
+							<div class="add-reviews__block">
+								<div class="add-reviews__inner-top">
+									<h3 class="add-reviews__title">Валерия</h3>
+									<div class="rating add-reviews__rating" style="--rating: 3.7;" aria-label="Rating of this product is 3.7 out of 5."></div>
 								</div>
 							</div>
-							<span class="add-reviews__date">12:55 06.12.2022</span>
-							<ul class="add-reviews__list">
-								<li class="add-reviews__item">Маникюр + однотонное покрытие</li>
-								<li class="add-reviews__item">Маникюр + френч/втирка/дизайн от 4 ногтей</li>
-							</ul>
+							<div class="add-reviews__block">
+								<div class="add-reviews__info">
+									<span class="add-reviews__subtitle">Время посещения:</span>
+									<span class="add-reviews__date">12:55 06.12.2022</span>
+								</div>
+							</div>
+							<div class="add-reviews__block">
+								<span class="add-reviews__subtitle">Оказанные услуги:</span>
+								<ul class="add-reviews__list">
+									<li class="add-reviews__item">Маникюр + однотонное покрытие</li>
+									<li class="add-reviews__item">Маникюр + френч/втирка/дизайн от 4 ногтей</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<form action="#" class="add-reviews-form add-reviews__form">
 						<textarea class="textarea add-reviews-form__input" placeholder="Ваш отзыв" required></textarea>
-						<div class="c-rating add-reviews-form__rating">
-							<svg class="c-rating__star c-rating__star--active">
-								<use xlink:href="img/sprite.svg#icon-star"></use>
-							</svg>
-							<svg class="c-rating__star c-rating__star--active">
-								<use xlink:href="img/sprite.svg#icon-star"></use>
-							</svg>
-							<svg class="c-rating__star c-rating__star--active">
-								<use xlink:href="img/sprite.svg#icon-star"></use>
-							</svg>
-							<svg class="c-rating__star c-rating__star--active">
-								<use xlink:href="img/sprite.svg#icon-star"></use>
-							</svg>
-							<svg class="c-rating__star c-rating__star--active">
-								<use xlink:href="img/sprite.svg#icon-star"></use>
-							</svg>
+						<div class="add-reviews-form__inner">
+							<span class="add-reviews-form__help">Выберите рейтинг:</span>
+							<div class="rating-select add-reviews-form__rating">
+								<input type="radio" id="star5" name="rating" value="5">
+								<label for="star5" title="5 star"></label>
+								<input type="radio" id="star4" name="rating" value="4">
+								<label for="star4" title="4 star"></label>
+								<input type="radio" id="star3" name="rating" value="3">
+								<label for="star3" title="3 star"></label>
+								<input type="radio" id="star2" name="rating" value="2">
+								<label for="star2" title="2 star"></label>
+								<input type="radio" id="star1" name="rating" value="1">
+								<label for="star1" title="1 star"></label>
+							</div>
 						</div>
 						<a href="signup-services.html" class="add-reviews-form__btn btn">Отправить</a>
 					</form>
