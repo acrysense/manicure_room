@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lera - Отзывы</title>
+	<title>Lera - Записаться</title>
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -155,96 +155,72 @@
 		<!-- end of mobile mneu -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- all reviews -->
-			<div class="all-reviews" id="all-reviews">
+			<!-- auth -->
+			<div class="auth" id="auth">
 				<div class="container">
-					<div class="all-reviews__top">
-						<h2 class="all-reviews__heading">Отзывы</h2>
-						<div class="all-reviews__select salad-select">
-							<select class="js-select">
-								<option value="all">Все мастера</option>
-								<option value="valeria">Валерия</option>
-								<option value="ekaterina">Екатерина</option>
-								<option value="irina">Ирина</option>
-							</select>
-						</div>
-					</div>
-					<div class="all-reviews__wrapper">
-						<div class="all-reviews__item" data-reviews="ekaterina">
-							<h3 class="all-reviews__title">Имя Фамилия</h3>
-							<div class="rating all-reviews__rating" style="--rating: 3.7;" aria-label="Rating of this product is 3.7 out of 5."></div>
-							<div class="all-reviews__description">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore ex maxime nisi ipsa quo natus repellat, alias cum, officiis fugiat est esse consectetur nulla sint maiores incidunt dolorem iste!</p>
-							</div>
-							<div class="all-reviews__master">
-								<span class="all-reviews__help">Мастер:</span>
-								<div class="all-reviews__master-inner">
-									<picture class="all-reviews__img">
-										<img src="img/masters-01.jpeg" alt="Image">
-									</picture>
-									<h3 class="all-reviews__name">Екатерина</h3>
+					<div class="auth__wrapper">
+						<h2 class="auth__title">Запись</h2>
+						<form action="/result_order" class="auth-form auth__form" method="POST">
+							<div class="time-select">
+								<div class="time-select__block">
+									<h3 class="time-select__subtitle">16.06.2023</h3>
+									<div class="time-select__list">
+										<div class="time-select__item">
+											<span class="time-select__title">14:00</span>
+										</div>
+										<div class="time-select__item">
+											<span class="time-select__title">15:00</span>
+										</div>
+										<div class="time-select__item">
+											<span class="time-select__title">16:00</span>
+										</div>
+										<div class="time-select__item">
+											<span class="time-select__title">16:45</span>
+										</div>
+										<div class="time-select__item">
+											<span class="time-select__title">18:00</span>
+										</div>
+										<div class="time-select__item">
+											<span class="time-select__title">19:00</span>
+										</div>
+										<div class="time-select__item">
+											<span class="time-select__title">20:00</span>
+										</div>
+									</div>
+								</div>
+								<div class="time-select__block">
+									<h3 class="time-select__subtitle">17.06.2023</h3>
+									<div class="time-select__list">
+										<div class="time-select__item">
+											<span class="time-select__title">14:00</span>
+										</div>
+										<div class="time-select__item">
+											<span class="time-select__title">15:00</span>
+										</div>
+										<div class="time-select__item">
+											<span class="time-select__title">16:00</span>
+										</div>
+										<div class="time-select__item">
+											<span class="time-select__title">16:45</span>
+										</div>
+										<div class="time-select__item">
+											<span class="time-select__title">18:00</span>
+										</div>
+										<div class="time-select__item">
+											<span class="time-select__title">19:00</span>
+										</div>
+										<div class="time-select__item">
+											<span class="time-select__title">20:00</span>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="all-reviews__item" data-reviews="valeria">
-							<h3 class="all-reviews__title">Имя Фамилия</h3>
-							<div class="rating all-reviews__rating" style="--rating: 3.7;" aria-label="Rating of this product is 3.7 out of 5."></div>
-							<div class="all-reviews__description">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore ex maxime nisi ipsa quo natus repellat, alias cum, officiis fugiat est esse consectetur nulla sint maiores incidunt dolorem iste!</p>
-							</div>
-							<div class="all-reviews__master">
-								<span class="all-reviews__help">Мастер:</span>
-								<div class="all-reviews__master-inner">
-									<picture class="all-reviews__img">
-										<img src="img/masters-01.jpeg" alt="Image">
-									</picture>
-									<h3 class="all-reviews__name">Валерия</h3>
-								</div>
-							</div>
-						</div>
-						<div class="all-reviews__item" data-reviews="irina">
-							<h3 class="all-reviews__title">Имя Фамилия</h3>
-							<div class="rating all-reviews__rating" style="--rating: 3.7;" aria-label="Rating of this product is 3.7 out of 5."></div>
-							<div class="all-reviews__description">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore ex maxime nisi ipsa quo natus repellat, alias cum, officiis fugiat est esse consectetur nulla sint maiores incidunt dolorem iste!</p>
-							</div>
-							<div class="all-reviews__master">
-								<span class="all-reviews__help">Мастер:</span>
-								<div class="all-reviews__master-inner">
-									<picture class="all-reviews__img">
-										<img src="img/masters-03.jpeg" alt="Image">
-									</picture>
-									<h3 class="all-reviews__name">Ирина</h3>
-								</div>
-							</div>
-						</div>
-						<div class="all-reviews__item">
-							<h3 class="all-reviews__title">Имя Фамилия</h3>
-							<div class="rating all-reviews__rating" style="--rating: 2;" aria-label="Rating of this product is 2 out of 5."></div>
-							<div class="all-reviews__description">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore ex maxime nisi ipsa quo natus repellat, alias cum, officiis fugiat est esse consectetur nulla sint maiores incidunt dolorem iste!</p>
-							</div>
-						</div>
-						<div class="all-reviews__item" data-reviews="valeria">
-							<h3 class="all-reviews__title">Имя Фамилия</h3>
-							<div class="rating all-reviews__rating" style="--rating: 2;" aria-label="Rating of this product is 2 out of 5."></div>
-							<div class="all-reviews__description">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore ex maxime nisi ipsa quo natus repellat, alias cum, officiis fugiat est esse consectetur nulla sint maiores incidunt dolorem iste!</p>
-							</div>
-							<div class="all-reviews__master">
-								<span class="all-reviews__help">Мастер:</span>
-								<div class="all-reviews__master-inner">
-									<picture class="all-reviews__img">
-										<img src="img/masters-01.jpeg" alt="Image">
-									</picture>
-									<h3 class="all-reviews__name">Валерия</h3>
-								</div>
-							</div>
-						</div>
+							<button class="auth-form__btn btn" type="submit" name="btn_forward" id="calendar-submit">Далее</button>
+						</form>
 					</div>
 				</div>
 			</div>
-			<!-- end of all reviews -->
+			<!-- end of auth -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
@@ -285,6 +261,26 @@
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js" integrity="sha512-AIOTidJAcHBH2G/oZv9viEGXRqDNmfdPVPYOYKGy3fti0xIplnlgMHUGfuNRzC6FkzIo0iIxgFnr9RikFxK+sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" integrity="sha512-f0tzWhCwVFS3WeYaofoLWkTP62ObhewQ1EZn65oSYDZUg1+CyywGKkWzm8BxaJj5HGKI72PnMH9jYyIFz+GH7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script>
+		$('#datetimepicker').datetimepicker({
+			inline: true,
+			timepicker: false,
+			minDate: 0,
+			maxDate: '+1970/02/31',
+			dayOfWeekStart: 1,
+			//allowDates: ['2022/11/11'],
+			formatDate: 'Y/m/d',
+			onSelectDate: function(dt, $input) {
+				$('#datetimepicker').datetimepicker('setOptions', {
+					timepicker: true,
+					allowTimes: ['00:00', '04:00', '12:00', '15:00']
+				});
+			}
+		});
+	</script>
 </body>
 
 </html>
