@@ -165,63 +165,203 @@
 							<input type="text" class="input auth-form__input" placeholder="Фамилия" required>
 							<input type="text" class="input auth-form__input" placeholder="Телефон" data-inputmask="'mask': '+7 (999) 999-99-99'" required>
 							<div class="catalog-filter__select">
-								<select class="js-select">
+								<select class="js-select" id="master-select-enroll">
 									<option data-placeholder="true">Выбор мастера</option>
-									<option value="1">Екатерина</option>
-									<option value="2">Ирина</option>
-									<option value="3">Валерия</option>
+									<option value="1" data-id="1">Екатерина</option>
+									<option value="2" data-id="2">Ирина</option>
+									<option value="3" data-id="3">Валерия</option>
 								</select>
 							</div>
 							<div class="time-select">
-								<div class="time-select__block">
-									<h3 class="time-select__subtitle">16.06.2023</h3>
-									<div class="time-select__list">
-										<div class="time-select__item">
-											<span class="time-select__value">14:00</span>
+								<div class="time-select__wrap" data-id="1">
+									<div class="time-select__block">
+										<h3 class="time-select__subtitle">16.06.2023</h3>
+										<div class="time-select__list">
+											<label for="time-select-001" class="time-select__item">
+												<input type="radio" id="time-select-001" class="time-select__input" name="time-select">
+												<div class="time-select__group">
+													<span class="time-select__value">14:00</span>
+												</div>
+											</label>
+											<label for="time-select-002" class="time-select__item">
+												<input type="radio" id="time-select-002" class="time-select__input" name="time-select">
+												<div class="time-select__group">
+													<span class="time-select__value">15:00</span>
+												</div>
+											</label>
+											<label for="time-select-003" class="time-select__item">
+												<input type="radio" id="time-select-003" class="time-select__input" name="time-select">
+												<div class="time-select__group">
+													<span class="time-select__value">16:00</span>
+												</div>
+											</label>
+											<label for="time-select-004" class="time-select__item">
+												<input type="radio" id="time-select-004" class="time-select__input" name="time-select">
+												<div class="time-select__group">
+													<span class="time-select__value">17:00</span>
+												</div>
+											</label>
 										</div>
-										<div class="time-select__item">
-											<span class="time-select__value">15:00</span>
-										</div>
-										<div class="time-select__item">
-											<span class="time-select__value">16:00</span>
-										</div>
-										<div class="time-select__item">
-											<span class="time-select__value">16:45</span>
-										</div>
-										<div class="time-select__item">
-											<span class="time-select__value">18:00</span>
-										</div>
-										<div class="time-select__item">
-											<span class="time-select__value">19:00</span>
-										</div>
-										<div class="time-select__item">
-											<span class="time-select__value">20:00</span>
+									</div>
+									<div class="time-select__block">
+										<h3 class="time-select__subtitle">17.06.2023</h3>
+										<div class="time-select__list">
+											<label for="time-select-101" class="time-select__item">
+												<input type="radio" id="time-select-101" class="time-select__input" name="time-select">
+												<div class="time-select__group">
+													<span class="time-select__value">14:00</span>
+												</div>
+											</label>
+											<label for="time-select-102" class="time-select__item">
+												<input type="radio" id="time-select-102" class="time-select__input" name="time-select">
+												<div class="time-select__group">
+													<span class="time-select__value">15:00</span>
+												</div>
+											</label>
+											<label for="time-select-103" class="time-select__item">
+												<input type="radio" id="time-select-103" class="time-select__input" name="time-select">
+												<div class="time-select__group">
+													<span class="time-select__value">16:00</span>
+												</div>
+											</label>
+											<label for="time-select-104" class="time-select__item">
+												<input type="radio" id="time-select-104" class="time-select__input" name="time-select">
+												<div class="time-select__group">
+													<span class="time-select__value">17:00</span>
+												</div>
+											</label>
 										</div>
 									</div>
 								</div>
-								<div class="time-select__block">
-									<h3 class="time-select__subtitle">17.06.2023</h3>
-									<div class="time-select__list">
-										<div class="time-select__item">
-											<span class="time-select__value">14:00</span>
+								<div class="time-select__wrap" data-id="2">
+									<div class="time-select__block">
+										<h3 class="time-select__subtitle">17.06.2023</h3>
+										<div class="time-select__list">
+											<label for="time-select-1001" class="time-select__item">
+												<input type="radio" id="time-select-1001" class="time-select__input" name="time-select-2">
+												<div class="time-select__group">
+													<span class="time-select__value">10:30</span>
+												</div>
+											</label>
+											<label for="time-select-1002" class="time-select__item">
+												<input type="radio" id="time-select-1002" class="time-select__input" name="time-select-2">
+												<div class="time-select__group">
+													<span class="time-select__value">12:30</span>
+												</div>
+											</label>
+											<label for="time-select-1003" class="time-select__item">
+												<input type="radio" id="time-select-1003" class="time-select__input" name="time-select-2">
+												<div class="time-select__group">
+													<span class="time-select__value">13:30</span>
+												</div>
+											</label>
+											<label for="time-select-1004" class="time-select__item">
+												<input type="radio" id="time-select-1004" class="time-select__input" name="time-select-2">
+												<div class="time-select__group">
+													<span class="time-select__value">15:30</span>
+												</div>
+											</label>
+											<label for="time-select-1005" class="time-select__item">
+												<input type="radio" id="time-select-1005" class="time-select__input" name="time-select-2">
+												<div class="time-select__group">
+													<span class="time-select__value">16:10</span>
+												</div>
+											</label>
+											<label for="time-select-1006" class="time-select__item">
+												<input type="radio" id="time-select-1006" class="time-select__input" name="time-select-2">
+												<div class="time-select__group">
+													<span class="time-select__value">17:40</span>
+												</div>
+											</label>
+											<label for="time-select-1007" class="time-select__item">
+												<input type="radio" id="time-select-1007" class="time-select__input" name="time-select">
+												<div class="time-select__group">
+													<span class="time-select__value">18:45</span>
+												</div>
+											</label>
 										</div>
-										<div class="time-select__item">
-											<span class="time-select__value">15:00</span>
+									</div>
+									<div class="time-select__block">
+										<h3 class="time-select__subtitle">18.06.2023</h3>
+										<div class="time-select__list">
+											<label for="time-select-2001" class="time-select__item">
+												<input type="radio" id="time-select-2001" class="time-select__input" name="time-select-2">
+												<div class="time-select__group">
+													<span class="time-select__value">12:30</span>
+												</div>
+											</label>
+											<label for="time-select-2002" class="time-select__item">
+												<input type="radio" id="time-select-2002" class="time-select__input" name="time-select-2">
+												<div class="time-select__group">
+													<span class="time-select__value">14:00</span>
+												</div>
+											</label>
+											<label for="time-select-2003" class="time-select__item">
+												<input type="radio" id="time-select-2003" class="time-select__input" name="time-select-2">
+												<div class="time-select__group">
+													<span class="time-select__value">15:00</span>
+												</div>
+											</label>
+											<label for="time-select-2004" class="time-select__item">
+												<input type="radio" id="time-select-2004" class="time-select__input" name="time-select-2">
+												<div class="time-select__group">
+													<span class="time-select__value">16:00</span>
+												</div>
+											</label>
 										</div>
-										<div class="time-select__item">
-											<span class="time-select__value">16:00</span>
+									</div>
+								</div>
+								<div class="time-select__wrap" data-id="3">
+									<div class="time-select__block">
+										<h3 class="time-select__subtitle">16.06.2023</h3>
+										<div class="time-select__list">
+											<label for="time-select-3001" class="time-select__item">
+												<input type="radio" id="time-select-3001" class="time-select__input" name="time-select-3">
+												<div class="time-select__group">
+													<span class="time-select__value">10:00</span>
+												</div>
+											</label>
+											<label for="time-select-3002" class="time-select__item">
+												<input type="radio" id="time-select-3002" class="time-select__input" name="time-select-3">
+												<div class="time-select__group">
+													<span class="time-select__value">11:00</span>
+												</div>
+											</label>
+											<label for="time-select-3003" class="time-select__item">
+												<input type="radio" id="time-select-3003" class="time-select__input" name="time-select-3">
+												<div class="time-select__group">
+													<span class="time-select__value">12:00</span>
+												</div>
+											</label>
+											<label for="time-select-3004" class="time-select__item">
+												<input type="radio" id="time-select-3004" class="time-select__input" name="time-select-3">
+												<div class="time-select__group">
+													<span class="time-select__value">15:00</span>
+												</div>
+											</label>
 										</div>
-										<div class="time-select__item">
-											<span class="time-select__value">16:45</span>
-										</div>
-										<div class="time-select__item">
-											<span class="time-select__value">18:00</span>
-										</div>
-										<div class="time-select__item">
-											<span class="time-select__value">19:00</span>
-										</div>
-										<div class="time-select__item">
-											<span class="time-select__value">20:00</span>
+									</div>
+									<div class="time-select__block">
+										<h3 class="time-select__subtitle">17.06.2023</h3>
+										<div class="time-select__list">
+											<label for="time-select-4001" class="time-select__item">
+												<input type="radio" id="time-select-4001" class="time-select__input" name="time-select-3">
+												<div class="time-select__group">
+													<span class="time-select__value">14:00</span>
+												</div>
+											</label>
+											<label for="time-select-4002" class="time-select__item">
+												<input type="radio" id="time-select-4002" class="time-select__input" name="time-select-3">
+												<div class="time-select__group">
+													<span class="time-select__value">15:00</span>
+												</div>
+											</label>
+											<label for="time-select-4003" class="time-select__item">
+												<input type="radio" id="time-select-4003" class="time-select__input" name="time-select-3">
+												<div class="time-select__group">
+													<span class="time-select__value">15:30</span>
+												</div>
+											</label>
 										</div>
 									</div>
 								</div>
